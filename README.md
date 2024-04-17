@@ -1,0 +1,1 @@
+# ai-school-tech-writer
