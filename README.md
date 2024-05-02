@@ -1,4 +1,4 @@
-# AI for Developer Productivity - Project 1: Technical Writer Agent
+# AI for Developer Productivity: Technical Writer Agent
 
 ## Overview
 In this project, we developed a **Technical Writer Agent** to enhance developer productivity. The core functionality of our agent leverages Retrieval-Augmented Generation (RAG) to dynamically update and refine technical documentation. This innovative approach not only streamlines the documentation process but also ensures that it remains accurate, up-to-date, and contextually relevant.
@@ -18,6 +18,6 @@ Embrace your creativity and personalize this project to craft a solution that un
 
 ## Privacy and Submission Guidelines
 - **Submission Requirements:** Please submit a link to your public repo with your implementation or a loom video showcasing your work on the [BloomTech AI Platform](app.bloomtech.com). 
-- **Sensitive Information: If your implementation involves sensitive information, you are not required to submit a public repository.** Instead, a detailed review of your project through a Loom video is acceptable, where you can demonstrate the functionality and discuss the technologies used without exposing confidential data.
+- **Sensitive Information:** If your implementation involves sensitive information, you are not required to submit a public repository. Instead, a detailed review of your project through a Loom video is acceptable, where you can demonstrate the functionality and discuss the technologies used without exposing confidential data.
 
 ---
