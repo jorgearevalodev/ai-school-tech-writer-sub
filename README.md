@@ -9,7 +9,6 @@ Embrace your creativity and personalize this project to craft a solution that un
 ### Minimum Requirements
 1. **RAG Integration:** Successfully integrate Retrieval-Augmented Generation (RAG) to enable your agent to access and utilize external information when generating responses.
 2. **Vector Database Implementation:** Create and implement a vector data store capable of embedding and retrieving documents, ensuring that the system can access necessary information efficiently.
-3. **Basic UI for Interaction:** Develop a basic user interface (UI) that allows users to interact with the agent, submit queries, and receive generated content.
 
 ### Stretch Goals
 1. **Enhanced UI/UX:** Develop a more advanced and user-friendly interface that includes features such as real-time suggestions, auto-completion of content, and a more interactive documentation process.
