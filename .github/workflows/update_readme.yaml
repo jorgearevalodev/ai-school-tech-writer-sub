@@ -39,7 +39,7 @@ jobs:
       # Run the Python script
       - name: Generate updated README
         env:
-          OPEN_AI_API_KEY: ${{secrets.OPEN_AI_API_KEY}}
+          OPENAI_API_KEY: ${{secrets.OPENAI_API_KEY}}
           GITHUB_TOKEN: ${{secrets.MY_GITHUB_TOKEN}}
           REPO_PATH: ${{github.repository}}
           PR_NUMBER: ${{env.pull_request_number}}
