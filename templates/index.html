@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Technical Writer</title>
+    <link rel="stylesheet" href="./static/style.css">
+</head>
+<body>
+    <h1>Technical Writer</h1>
+    <form id="input-form">
+        <label for="text">Input Text:</label>
+        <label for="text">Predefined Prompts:</label>
+        {% for prompt in predefined_prompts %}
+            <button type="button" 
+                    onclick="execute_prompt('{{ prompt['prompt'] }}')"
+                    title="{{ prompt['whole_text'] }}"
+            >{{ prompt['title'] }}</button>
+        {% endfor %}
+        <textarea id="text" name="text" required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="result"></div>
+    <div id="loading-spinner" class="spinner" style="display: none;"></div>
+
+    <script>
+        document.getElementById('input-form').addEventListener('submit', async function(event) {
+            event.preventDefault();
+            const text = document.getElementById('text').value;
+            await execute_prompt(text);
+        });
+        async function execute_prompt(text) {
+            const spinner = document.getElementById('loading-spinner');
+            spinner.style.display = 'block'; // Show the spinner
+            const response = await fetch('/process', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ text: text })
+            });
+
+
+            spinner.style.display = 'none'; // Hide the spinner
+            if (response.ok) {
+                const result = await response.json();
+                document.getElementById('result').innerText = `Result: ${result.result}`;
+            } else {
+                const error = await response.json();
+                document.getElementById('result').innerText = `Error: ${error.detail}`;
+            }
+        };
+    </script>
+</body>
+</html>

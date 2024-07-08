@@ -21,3 +21,100 @@ Embrace your creativity and personalize this project to craft a solution that un
 - **Sensitive Information:** If your implementation involves sensitive information, you are not required to submit a public repository. Instead, a detailed review of your project through a Loom video is acceptable, where you can demonstrate the functionality and discuss the technologies used without exposing confidential data.
 
 ---
+
+## Project description
+
+This project is designed to automate various tasks related to managing GitHub issues and releases. It provides a web interface and a console interface to interact with GitHub repositories, allowing users to document issues, update issue statuses, generate release notes, and more.
+
+## Features
+
+- **Document GitHub Issues**: Automatically document the details and comments of a GitHub issue.
+- **Update Issue Status**: Update the status of an issue in a GitHub project.
+- **Generate Release Notes**: Generate comprehensive release notes for a list of issues.
+- **Create or Update Releases**: Create or update a release on a GitHub repository.
+- **Add Comments to Issues**: Add comments to a GitHub issue.
+- **Delete Tags**: Delete a tag from a GitHub repository.
+- **List All Releases**: List all releases for a product.
+- **Get Similar Issues**: Retrieve similar issues from a vector database.
+
+
+## Installation
+
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/yourusername/sample-project.git
+    cd sample-project
+    ```
+
+2. Create and activate a virtual environment:
+    ```sh
+    python -m venv venv
+    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+    ```
+
+3. Install the dependencies:
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+4. Set up environment variables:
+    - Create a `.env` file in the root directory of the project.
+    - Add the following environment variables:
+        ```env
+        GITHUB_TOKEN=your_github_token
+        REPO_OWNER=your_repo_owner
+        REPO_NAME=your_repo_name
+        MAINTENANCE_REPO=your_maintenance_repo
+        USE_CONSOLE=False  # Set to 'True' to use console mode
+        ```
+
+## Usage
+
+### Web Interface
+
+1. Run the web application:
+    ```sh
+    uvicorn main:app --host 0.0.0.0 --port 8000
+    ```
+
+2. Open your browser and navigate to `http://localhost:8000`.
+
+3. Use the web interface to interact with GitHub issues and releases.
+
+### Console Interface
+
+1. Set `USE_CONSOLE=True` in your `.env` file.
+
+2. Run the console application:
+    ```sh
+    python main.py
+    ```
+
+3. Follow the prompts to interact with GitHub issues and releases.
+
+## Code Structure
+
+- **main.py**: Entry point of the application. Determines whether to run the web or console interface.
+- **web_app.py**: Contains the FastAPI web application and endpoints.
+- **code_assistant.py**: Contains functions to load predefined prompts and start the agent.
+- **issue_documenter.py**: Contains the `IssueDocumenter` class and various functions to interact with GitHub issues and releases.
+- **content_generator.py**: Contains functions to generate content using OpenAI's language model.
+
+## Example Code References
+
+### `issue_documenter.py`
+
+- **Class Definition and Initialization**:
+- **Get Issue Details and Comments**:
+- **Update Issue Status**:
+- **Document Issue**:
+
+### `web_app.py`
+
+- **Web Application Setup**:
+- **Root Endpoint**:
+
+### `content_generator.py`
+
+- **Extract Issue Information**:
+- **Generate Release Notes for Issue**:
