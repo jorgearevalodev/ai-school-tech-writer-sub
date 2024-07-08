@@ -17,7 +17,7 @@ Embrace your creativity and personalize this project to craft a solution that un
 4. **Add The Features You Want**: Let your creativity shine by adding a unique feature that significantly simplifies or enhances your daily routines. Innovate with functionalities that solve problems and improve efficiency or satisfaction in meaningful ways.
 
 ## Privacy and Submission Guidelines
-- **Submission Requirements:** Please submit a link to your public https://drive.google.com/file/d/1xsi8EjarjIBv-_UhEmXXZRdUKE_HkQEA/view?usp=drive_linkrepo with your implementation or a loom video showcasing your work on the [BloomTech AI Platform](app.bloomtech.com). 
+- **Submission Requirements:** Please submit a link to your public repo with your implementation or a loom video showcasing your work on the [BloomTech AI Platform](app.bloomtech.com). 
 - **Sensitive Information:** If your implementation involves sensitive information, you are not required to submit a public repository. Instead, a detailed review of your project through a Loom video is acceptable, where you can demonstrate the functionality and discuss the technologies used without exposing confidential data.
 
 ---
